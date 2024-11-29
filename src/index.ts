@@ -6,6 +6,9 @@ import { handleAdminReply } from './handlers/adminReply';
 import './config/db';
 import { handleMessageEdit } from './handlers/messageEditWarning';
 import { handleUserMessage } from './handlers/handleUserMessage';
+import { config as envConfig } from 'dotenv';
+
+envConfig();
 
 interface SessionData {
   awaitingQuestion: boolean;
