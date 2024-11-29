@@ -1,4 +1,7 @@
 import { defineConfig } from '../defineConfig';
+import { config as envConfig } from 'dotenv';
+
+envConfig();
 
 const env = process.env;
 export function createLocalConfig() {
